@@ -1,1 +1,1 @@
-# jisu.gitub.io
+# jisu.github.io
