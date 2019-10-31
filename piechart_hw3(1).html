@@ -31,9 +31,25 @@ data  Visualization 11/1
         // then, the remaining process is same to the previous chart drawing assignments.
         var data = new google.visualization.arrayToDataTable(arrayData);
 
+	      
+	      
         var options = {
-          title: 'My Daily Activities'
-        };
+		  width:900,
+		  height:400,
+          title: 'Zoo in Geumgang Natural Recreation Forest',
+		  slices: {  1: {offset: 0.1},
+                    2: {offset: 0.1},
+                    5: {offset: 0.05},
+					3: {offset: 0.1},
+          },
+		  colors: ['DarkGray', 'Black', 'SaddleBrown', 'LightSteelBlue', 'Goldenrod','Dimgray'],
+		  pieSliceText: 'value',
+		  sliceVisibilityThreshold :0,
+		  fontSize: 17,
+		  legend: {
+			position: 'labeled'
+		},
+		};
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
