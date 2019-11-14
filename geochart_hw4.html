@@ -10,11 +10,11 @@
 	  'packages':['geochart'],
 	   // Note: you will need to get a mapsApiKey for your project.
            // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-       'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+       	  'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
       });
       //google.charts.setOnLoadCallback(drawChart);
       google.charts.setOnLoadCallback(readRegionsMap); // (1) when the javascript is read, readFile function is launched first.
- // (2) file is read, and the data is saved in arrayData
+      // (2) file is read, and the data is saved in arrayData
       // arrayData variable is sent to the function called 'draw'
       function readFile() {
         filename = "data2.csv";
