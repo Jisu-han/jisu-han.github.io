@@ -18,6 +18,11 @@
           drawRegionsMap(arrayData)
         });
       };
+      
+      function draw(arrayData) {
+	// (3) convert arrayData into DataTable form
+        var data = new google.visualization.arrayToDataTable(arrayData);
+
 
         var options = {
           icons: {
